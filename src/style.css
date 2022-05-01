@@ -26,10 +26,19 @@ form {
 .form-field {
     display: flex;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 5rem;
 }
 
 button {
     width: fit-content;
     align-self: center;
 }
+
+span {
+    font-size: 0.75rem;
+}
+
+input {
+    width: 200px
+}
+
