@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite App</title>
+</head>
+<body>
+<main>
+
+    <fieldset>
+        <legend>
+            Please enter your personal information.
+        </legend>
+        <form novalidate>
+            <div class="form-field">
+                <label for="email">E-Mail: </label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <span class="error error-email"></span>
+
+
+            <div class="form-field">
+                <label for="zip-code">Zip-Code: </label>
+                <input type="number" id="zip-code" name="zip-code" required>
+            </div>
+            <span class="error error-zip-code"></span>
+
+            <div class="form-field">
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <span class="error error-password"></span>
+            <div class="form-field">
+                <label for="password-validation">Repeat Password: </label>
+                <input type="password" id="password-validation" name="password-validation" required>
+            </div>
+            <span class="error error-password-validation"></span>
+
+            <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+</main>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
